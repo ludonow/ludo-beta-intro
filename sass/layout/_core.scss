@@ -1,0 +1,52 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/placeholders";
+/* core */
+.core {
+    @extend %relative;
+    @extend %as_wide_as_parent;
+    @extend %header_height_offset;
+    @extend %text_center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $deep_orange;
+    color: white;
+}
+.core.row {
+    // overwrite bootstrap margin
+    margin: 0;
+}
+    .game, .social, .expert {
+        @extend %as_tall_as_parent;
+    }
+    .game-text, .social-text, .expert-text {
+        @extend %relative;
+        margin-bottom: $core-text_margin-bottom;
+        line-height: $core-text_line-height;
+
+        .core-text-title {
+            @extend %font_Exo2;
+            @extend %bold_font;
+            font-size: $core-text-title_font-size;
+            padding-bottom: $core-text-title_padding-bottom;
+        }
+        .core-text-content {
+            padding-bottom: $core-text-content_padding-bottom;
+            font-size: $core-text-content_font-size;
+        }
+    }
+    .game-img, .social-img, .expert-img {
+        @extend %relative;
+        @extend %background_img_setting;
+        height: $core-img_height;
+        @media screen and (min-width: $bt_xs_width) {
+            background-size: $core-img_size;
+        }
+        @media screen and (max-width: $bt_xs_width) {
+            background-size: $core-img_size_mobile;
+        }
+    }
+    .game-img { @include background_img_content(game); }
+    .social-img { @include background_img_content(social); }
+    .expert-img { @include background_img_content(expert); }
+/* end of core */

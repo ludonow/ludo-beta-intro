@@ -1,0 +1,679 @@
+/* reset of css */
+/* line 2, ../../sass/helpers/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 23, ../../sass/helpers/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 27, ../../sass/helpers/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 30, ../../sass/helpers/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 33, ../../sass/helpers/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 36, ../../sass/helpers/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 41, ../../sass/helpers/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end of reset of css */
+/* line 4, ../../sass/helpers/_placeholders.scss */
+.header, .side-nav {
+  position: fixed;
+}
+
+/* line 5, ../../sass/helpers/_placeholders.scss */
+.side-nav .side-nav-buttons, .side-nav .side-nav-button-center, .join-button__text, div.slides-buttons, .language-switch, .language-switch-button, .language-switch-arrow {
+  position: absolute;
+}
+
+/* line 6, ../../sass/helpers/_placeholders.scss */
+.header-logo-div, .header-logo, .header-logo-shadow, .side-nav .side-nav-button, .join-button.btn, .join, .join-img, .introduction, .core, .game-text, .social-text, .expert-text, .game-img, .social-img, .expert-img, .form, .contact-us {
+  position: relative;
+}
+
+/* line 7, ../../sass/helpers/_placeholders.scss */
+.language-switch-arrow {
+  z-index: 2;
+}
+
+/* line 10, ../../sass/helpers/_placeholders.scss */
+.language-switch-arrow {
+  right: 0;
+}
+
+/* line 14, ../../sass/helpers/_placeholders.scss */
+.header, .header-logo-shadow, .join, img.mobile-introduction-slide, .introduction, .core, .form, .language-switch-button, .language-switch-content {
+  width: 100%;
+}
+
+/* line 16, ../../sass/helpers/_placeholders.scss */
+.header-logo-div, .header-logo, .header-logo-shadow, .join-img, .game, .social, .expert, .language-switch-button {
+  height: 100%;
+}
+
+/* line 17, ../../sass/helpers/_placeholders.scss */
+.typeform-div {
+  height: 50%;
+}
+
+/* line 20, ../../sass/helpers/_placeholders.scss */
+.side-nav, .join, .introduction, .core, .form {
+  top: 93px;
+}
+
+/* line 23, ../../sass/helpers/_placeholders.scss */
+.header-logo-div, img.desktop-introduction-slide, img.mobile-introduction-slide, .arrows-div {
+  margin: 0 auto;
+}
+
+/* line 26, ../../sass/helpers/_placeholders.scss */
+.side-nav .side-nav-button, .side-nav .side-nav-button-center, div.slides-buttons {
+  border-radius: 50%;
+}
+
+/* line 29, ../../sass/helpers/_placeholders.scss */
+.introduction, .desktop-form-text, .mobile-form-text, .typeform-div {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* line 35, ../../sass/helpers/_placeholders.scss */
+.header-logo, .header-logo-shadow, .join-img, .game-img, .social-img, .expert-img, .language-switch-button, .language-switch-arrow {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* line 42, ../../sass/helpers/_placeholders.scss */
+.side-nav, .join-button, .join-text, div.slides-buttons, .introduction, .core, .form, .contact-us {
+  text-align: center;
+}
+
+/* line 43, ../../sass/helpers/_placeholders.scss */
+.join-button {
+  text-decoration: none;
+}
+
+/* line 44, ../../sass/helpers/_placeholders.scss */
+.welcome-text, .introduction-title, .game-text .core-text-title, .social-text .core-text-title, .expert-text .core-text-title {
+  font-weight: bold;
+}
+
+/* line 45, ../../sass/helpers/_placeholders.scss */
+.users-text .users-num-before, .users-text .users-num-after {
+  font-weight: 300;
+}
+
+/* line 46, ../../sass/helpers/_placeholders.scss */
+.welcome-text, .game-text .core-text-title, .social-text .core-text-title, .expert-text .core-text-title {
+  font-family: 'Microsoft JhengHei', 'EXO 2';
+}
+
+/* line 49, ../../sass/helpers/_placeholders.scss */
+div.slides-buttons, .language-switch-button:hover, .language {
+  cursor: pointer;
+}
+
+/* line 50, ../../sass/helpers/_placeholders.scss */
+div.slides-buttons {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+     not supported by any browser */
+}
+
+/* line 3, ../../sass/helpers/_default.scss */
+body {
+  font-family: "Microsoft JhengHei", "Exo";
+}
+
+/* header bar */
+/* line 5, ../../sass/layout/_header.scss */
+.header {
+  top: 0;
+  z-index: 5;
+  height: 93px;
+  background-color: white;
+  border-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: whitesmoke;
+  box-shadow: 0 1px 5px #505050;
+}
+
+/* line 17, ../../sass/layout/_header.scss */
+.header-logo-div {
+  width: 250px;
+}
+
+/* line 23, ../../sass/layout/_header.scss */
+.header-logo {
+  z-index: 5;
+  background-image: url("../images/Ludo_logo.png");
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+/* line 30, ../../sass/layout/_header.scss */
+.header-logo:hover {
+  opacity: 0;
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+
+/* line 35, ../../sass/layout/_header.scss */
+.header-logo-shadow {
+  top: -93px;
+  z-index: 2;
+  background-image: url("../images/Ludo_logo_shadow.png");
+}
+
+/* end of header bar */
+/* line 5, ../../sass/layout/_side-nav.scss */
+.side-nav {
+  height: 100%;
+  width: 40px;
+  z-index: 2;
+}
+/* line 13, ../../sass/layout/_side-nav.scss */
+.side-nav .side-nav-buttons {
+  top: 33%;
+}
+/* line 18, ../../sass/layout/_side-nav.scss */
+.side-nav .side-nav-button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+/* line 26, ../../sass/layout/_side-nav.scss */
+.side-nav .side-nav-button-center {
+  top: 7.5px;
+  left: 7.5px;
+  width: 5px;
+  height: 5px;
+  background-color: #cfd8dc;
+}
+/* line 35, ../../sass/layout/_side-nav.scss */
+.side-nav .side-nav-button:hover, .side-nav .active {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.2) translateY();
+  -ms-transform: scale(1.2) translateY();
+  -moz-transform: scale(1.2) translateY();
+  -webkit-transform: scale(1.2) translateY();
+  -o-transform: scale(1.2) translateY();
+  transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+/* line 5, ../../sass/components/_join-button.scss */
+.join-button {
+  width: 120px;
+  height: 40px;
+  border: solid;
+  border-color: #0a3f70;
+  border-width: 1px;
+  padding: 8px;
+  font-size: 24px;
+}
+
+/* line 17, ../../sass/components/_join-button.scss */
+.join-button.btn {
+  color: white;
+  background-color: #0a3f70;
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+/* line 24, ../../sass/components/_join-button.scss */
+.join-button.btn:hover {
+  color: #0a3f70;
+  background-color: white;
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+
+/* line 31, ../../sass/components/_join-button.scss */
+.join-button__text {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 7, ../../sass/layout/_join.scss */
+.join {
+  height: 560px;
+  background-color: #0e579b;
+  color: white;
+}
+
+/* line 15, ../../sass/layout/_join.scss */
+.join-text {
+  line-height: 1.2;
+}
+
+/* line 19, ../../sass/layout/_join.scss */
+.welcome-text {
+  margin-top: 64px;
+}
+@media screen and (min-width: 992px) {
+  /* line 19, ../../sass/layout/_join.scss */
+  .welcome-text {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* line 19, ../../sass/layout/_join.scss */
+  .welcome-text {
+    font-size: 38px;
+  }
+}
+
+/* line 30, ../../sass/layout/_join.scss */
+.users-text {
+  font-size: 24px;
+}
+/* line 35, ../../sass/layout/_join.scss */
+.users-text .users-num {
+  line-height: 1.3;
+  font-size: 100px;
+}
+
+/* line 40, ../../sass/layout/_join.scss */
+.join-img {
+  float: right;
+  background-image: url("../images/join.png");
+}
+
+/* line 5, ../../sass/components/_slides-buttons.scss */
+div.slides-buttons {
+  display: inline-block;
+  top: 46%;
+  width: 100px;
+  height: 100px;
+  font-size: 75px;
+  border: 3px solid #fff;
+  padding-top: 5.5px;
+  transition: 0.1s;
+  transition-timing-function: cubic-bezier(0.51, -0.65, 0.63, 1.57);
+}
+@media screen and (max-width: 992px) {
+  /* line 5, ../../sass/components/_slides-buttons.scss */
+  div.slides-buttons {
+    display: none;
+  }
+}
+/* line 23, ../../sass/components/_slides-buttons.scss */
+div.slides-buttons:hover {
+  border: 3px solid #505050;
+  transform: scale(1.11);
+  transition: 0.3s;
+  transition-timing-function: cubic-bezier(0.51, -0.65, 0.63, 1.57);
+}
+
+/* line 30, ../../sass/components/_slides-buttons.scss */
+div.left-button {
+  left: 130px;
+}
+
+/* line 33, ../../sass/components/_slides-buttons.scss */
+div.right-button {
+  right: 130px;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 5, ../../sass/components/_introduction-slides-instruction.scss */
+  .introduction-slides-instruction-div {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    width: 25%;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 15, ../../sass/components/_introduction-slides-instruction.scss */
+  .introduction-slides-instruction {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: rgba(180, 180, 180, 0.3);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../images/left_swipe.png");
+  }
+}
+
+/* line 7, ../../sass/components/_introduction-slides.scss */
+img.desktop-introduction-slide {
+  width: 60%;
+}
+
+/* line 8, ../../sass/layout/_introduction.scss */
+.introduction {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* line 17, ../../sass/layout/_introduction.scss */
+.introduction-title {
+  padding-bottom: 20px;
+  line-height: 1.2;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* core */
+/* line 5, ../../sass/layout/_core.scss */
+.core {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ff9300;
+  color: white;
+}
+
+/* line 15, ../../sass/layout/_core.scss */
+.core.row {
+  margin: 0;
+}
+
+/* line 22, ../../sass/layout/_core.scss */
+.game-text, .social-text, .expert-text {
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+/* line 27, ../../sass/layout/_core.scss */
+.game-text .core-text-title, .social-text .core-text-title, .expert-text .core-text-title {
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+/* line 33, ../../sass/layout/_core.scss */
+.game-text .core-text-content, .social-text .core-text-content, .expert-text .core-text-content {
+  padding-bottom: 6px;
+  font-size: 18px;
+}
+
+/* line 38, ../../sass/layout/_core.scss */
+.game-img, .social-img, .expert-img {
+  height: 200px;
+}
+@media screen and (min-width: 768px) {
+  /* line 38, ../../sass/layout/_core.scss */
+  .game-img, .social-img, .expert-img {
+    background-size: 35%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 38, ../../sass/layout/_core.scss */
+  .game-img, .social-img, .expert-img {
+    background-size: 30%;
+  }
+}
+
+/* line 49, ../../sass/layout/_core.scss */
+.game-img {
+  background-image: url("../images/game.png");
+}
+
+/* line 50, ../../sass/layout/_core.scss */
+.social-img {
+  background-image: url("../images/social.png");
+}
+
+/* line 51, ../../sass/layout/_core.scss */
+.expert-img {
+  background-image: url("../images/expert.png");
+}
+
+/* end of core */
+/* line 4, ../../sass/layout/_form.scss */
+.form {
+  height: 750px;
+  background-color: #fbc02c;
+  color: #3c3c3c;
+}
+
+/* line 13, ../../sass/layout/_form.scss */
+.desktop-form-text, .mobile-form-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 1.3;
+}
+@media screen and (min-width: 992px) {
+  /* line 13, ../../sass/layout/_form.scss */
+  .desktop-form-text, .mobile-form-text {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* line 13, ../../sass/layout/_form.scss */
+  .desktop-form-text, .mobile-form-text {
+    font-size: 18px;
+  }
+}
+
+/* line 25, ../../sass/layout/_form.scss */
+.arrows-div {
+  width: 60px;
+  height: 70px;
+}
+
+/* line 4, ../../sass/components/_language-switch.scss */
+.language-switch {
+  width: 100px;
+  height: 25px;
+  right: 10px;
+  margin-top: -25px;
+}
+@media screen and (max-width: 768px) {
+  /* line 4, ../../sass/components/_language-switch.scss */
+  .language-switch {
+    left: 0;
+    right: 0;
+    bottom: 27px;
+    margin: auto;
+  }
+}
+
+/* line 17, ../../sass/components/_language-switch.scss */
+.language-switch-button {
+  background-image: url("../images/language_drop_up_button.png");
+  border-radius: 5px;
+}
+/* line 24, ../../sass/components/_language-switch.scss */
+.language-switch-button:hover {
+  box-shadow: inset -0.5px -0.5px 0.5px #505050;
+}
+/* line 28, ../../sass/components/_language-switch.scss */
+.language-switch-button:active {
+  box-shadow: inset 0.5px 0.5px 0.5px #505050;
+}
+
+/* line 33, ../../sass/components/_language-switch.scss */
+.language-switch-arrow {
+  width: 25px;
+  height: 25px;
+  transition-timing-function: cubic-bezier(0.3, -0.3, 0.6, 1.8);
+  -moz-transition-timing-function: cubic-bezier(0.3, -0.3, 0.6, 1.8);
+  -webkit-transition-timing-function: cubic-bezier(0.3, -0.3, 0.6, 1.8);
+  -o-transition-timing-function: cubic-bezier(0.3, -0.3, 0.6, 1.8);
+  transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+/* line 43, ../../sass/components/_language-switch.scss */
+.arrows {
+  width: 35px;
+  height: 25px;
+  margin-left: -8px;
+}
+
+/* line 48, ../../sass/components/_language-switch.scss */
+.arrows path {
+  stroke: white;
+  fill: transparent;
+  stroke-width: 1px;
+}
+
+/* line 53, ../../sass/components/_language-switch.scss */
+.language-switch-content {
+  border-radius: 2px;
+  line-height: 1.3;
+  font-size: 10px;
+  background-color: #fdd479;
+}
+
+/* line 60, ../../sass/components/_language-switch.scss */
+.language-switch-button.clicked > .language-switch-arrow {
+  transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transition-timing-function: cubic-bezier(0.3, -0.3, 0.6, 1.8);
+  -moz-transition-timing-function: cubic-bezier(0.3, -0.3, 0.6, 1.8);
+  -webkit-transition-timing-function: cubic-bezier(0.3, -0.3, 0.6, 1.8);
+  -o-transition-timing-function: cubic-bezier(0.3, -0.3, 0.6, 1.8);
+  transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+/* line 65, ../../sass/components/_language-switch.scss */
+.language-switch-button.clicked + .language-switch-content {
+  transform: translateY(-98%);
+  -ms-transform: translateY(-98%);
+  -moz-transform: translateY(-98%);
+  -webkit-transform: translateY(-98%);
+  -o-transform: translateY(-98%);
+}
+
+/* line 68, ../../sass/components/_language-switch.scss */
+.language {
+  padding-bottom: 1.5px;
+}
+/* line 72, ../../sass/components/_language-switch.scss */
+.language:hover {
+  border-radius: 2px;
+  color: #fdd479;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* line 77, ../../sass/components/_language-switch.scss */
+.language:active {
+  border-radius: 2px;
+  box-shadow: inset 0.5px 0.5px 0.5px #fdd479;
+}
+
+/* line 3, ../../sass/components/_copyright.scss */
+.copyright {
+  padding-top: 35px;
+  color: #b4b4b4;
+  font-size: 12px;
+}
+
+/* line 7, ../../sass/layout/_contact-us.scss */
+.contact-us {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  background-color: #cfd8dc;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 15, ../../sass/layout/_contact-us.scss */
+.contact-us-title {
+  margin-bottom: 5px;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/* line 21, ../../sass/layout/_contact-us.scss */
+.contact-us-img img {
+  height: 55px;
+  transition-timing-function: cubic-bezier(0.58, -0.68, 0.43, 1.9);
+  -moz-transition-timing-function: cubic-bezier(0.58, -0.68, 0.43, 1.9);
+  -webkit-transition-timing-function: cubic-bezier(0.58, -0.68, 0.43, 1.9);
+  -o-transition-timing-function: cubic-bezier(0.58, -0.68, 0.43, 1.9);
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+/* line 26, ../../sass/layout/_contact-us.scss */
+.contact-us-img img:hover {
+  transform: scale(1.1) translateY(-10px);
+  -ms-transform: scale(1.1) translateY(-10px);
+  -moz-transform: scale(1.1) translateY(-10px);
+  -webkit-transform: scale(1.1) translateY(-10px);
+  -o-transform: scale(1.1) translateY(-10px);
+  transition-timing-function: cubic-bezier(0.58, -0.68, 0.43, 1.9);
+  -moz-transition-timing-function: cubic-bezier(0.58, -0.68, 0.43, 1.9);
+  -webkit-transition-timing-function: cubic-bezier(0.58, -0.68, 0.43, 1.9);
+  -o-transition-timing-function: cubic-bezier(0.58, -0.68, 0.43, 1.9);
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}

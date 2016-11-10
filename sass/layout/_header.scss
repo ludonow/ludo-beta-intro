@@ -1,0 +1,61 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/placeholders";
+/* header bar */
+.header {
+    @extend %fixed;
+    top: 0;
+    z-index: $header_depth;
+    @extend %as_wide_as_parent;
+    height: $header_height;
+    background-color: white;
+    border-width: $header_border-width;
+    border-bottom-style: solid;
+    border-bottom-color: $smoke_white;
+    box-shadow: 0 1px 5px $dark_gray;
+}
+    .header-logo-div {
+        @extend %relative;
+        @extend %as_tall_as_parent;
+        width: $header_logo_width;
+        @extend %margin_center_x;
+    }
+        .header-logo {
+            @extend %relative;
+            z-index: $header-logo_depth;
+            @extend %as_tall_as_parent;
+            @include background_img_content(Ludo_logo);
+            @extend %background_img_setting;
+            @include transition-duration(0.2s);
+            &:hover {
+                opacity: 0;
+                @include transition-duration(0.2s);
+            }
+        }
+        .header-logo-shadow {
+            @extend %relative;
+            top: -$header_height;
+            z-index: $header-logo-shadow_depth;
+            @extend %as_wide_as_parent;
+            @extend %as_tall_as_parent;
+            @extend %background_img_setting;
+            @include background_img_content(Ludo_logo_shadow);
+        }
+    // .log-in {
+    //     @extend %absolute;
+    //     top: 30%;
+    //     right: 3%;
+    //     border-style: solid;
+    //     border-color: $blue;
+    //     border-width: thin;
+    //     padding: 10px;
+    //     font-family: Verdana, Tahoma, Geneva, sans-serif;
+    //     transition-duration: 0.3s;
+    //     &:hover {
+    //         text-decoration: none;
+    //         background-color: $blue;
+    //         color: white;
+    //         @include transition-duration(0.3s);
+    //     }
+    // }
+/* end of header bar */

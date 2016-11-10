@@ -1,0 +1,32 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/placeholders";
+@import "components/language-switch";
+@import "components/copyright";
+
+.contact-us {
+    @extend %relative;
+    @extend %text_center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: $gray;
+    color: $black;
+}
+    .contact-us-title {
+        margin-bottom: 5px;
+        line-height: 1.8;
+        font-size: 18px;
+    }
+    .contact-us-img {
+        img {
+            height: 55px;
+            @include transition-timing-function(cubic-bezier(0.58, -0.68, 0.43, 1.9));
+            @include transition-duration(0.2s);
+
+            &:hover {
+                @include transform(1.1, -10px);
+                @include transition-timing-function(cubic-bezier(0.58, -0.68, 0.43, 1.9));
+                @include transition-duration(0.2s);
+            }
+        }
+    }

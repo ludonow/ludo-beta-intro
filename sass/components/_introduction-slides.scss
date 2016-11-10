@@ -1,0 +1,15 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/placeholders";
+
+@import "components/introduction-slides-instruction";
+
+img.desktop-introduction-slide {
+    width: 60%;
+    @extend %margin_center_x;
+}
+
+img.mobile-introduction-slide {
+    @extend %as_wide_as_parent;
+    @extend %margin_center_x;
+}

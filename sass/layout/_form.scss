@@ -1,0 +1,33 @@
+@import "helpers/variables";
+@import "helpers/placeholders";
+
+.form {
+    @extend %relative;
+    @extend %header_height_offset;
+    height: 750px;
+    @extend %as_wide_as_parent;
+    @extend %text_center;
+    background-color: $orange;
+    color: rgba(60, 60, 60, 1);
+}
+    .desktop-form-text, .mobile-form-text {
+        @extend %padding_x;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        line-height: 1.3;
+        @media screen and (min-width: $bt_md_width) {
+            font-size: 24px;
+        }
+        @media screen and (max-width: $bt_md_width) {
+            font-size: 18px;
+        }
+    }
+    .arrows-div {
+        width: 60px;
+        height: 70px;
+        @extend %margin_center_x;
+    }
+    .typeform-div {
+        @extend %half_height_of_parent;
+        @extend %padding_x;
+    }

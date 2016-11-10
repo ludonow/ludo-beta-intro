@@ -1,0 +1,46 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/placeholders";
+
+@import "components/join-button";
+
+.join {
+    @extend %relative;
+    @extend %as_wide_as_parent;
+    @extend %header_height_offset;
+    height: $join-page_height;
+    background-color: $blue;
+    color: white;
+}
+    .join-text {
+        @extend %text_center;
+        line-height: $join-text_line-height;
+    }
+        .welcome-text {
+            margin-top: $welcome-text_from_top;
+            @extend %bold_font;
+            @extend %font_Exo2;
+            @media screen and (min-width: $bt_md_width) {
+                font-size: $welcome-text_font-size_desktop;
+            }
+            @media screen and (max-width: $bt_md_width) {
+                font-size: $welcome-text_font-size_mobile;
+            }
+        }
+        .users-text {
+            font-size: $users-text_font-size;
+            .users-num-before, .users-num-after {
+                @extend %light_font;
+            }
+            .users-num {
+                line-height: $users-num_line-height;
+                font-size: $users-num_font-size;
+            }
+        }
+    .join-img {
+        @extend %relative;
+        float: right;
+        @extend %as_tall_as_parent;
+        @extend %background_img_setting;
+        @include background_img_content(join);
+    }

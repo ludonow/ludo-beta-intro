@@ -1,0 +1,81 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/placeholders";
+.language-switch {
+    @extend %absolute;
+    width: $language-switch_width;
+    height: $language-switch_height;
+    right: $language-switch_offset_right;
+    margin-top: $language-switch_margin-top;
+    @media screen and (max-width: $bt_xs_width) {
+        left: 0;
+        right: 0;
+        bottom: 27px;
+        margin: auto;
+    }
+}
+    .language-switch-button {
+        @extend %absolute;
+        @extend %as_wide_as_parent;
+        @extend %as_tall_as_parent;
+        @extend %background_img_setting;
+        @include background_img_content(language_drop_up_button);
+        border-radius: $language-switch-button_border-radius;
+        &:hover {
+            @extend %clickable;
+            box-shadow: inset -0.5px -0.5px 0.5px $dark_gray;
+        }
+        &:active {
+            box-shadow: inset 0.5px 0.5px 0.5px $dark_gray;
+        }
+
+    }
+        .language-switch-arrow {
+            @extend %absolute;
+            @extend %closer;
+            @extend %right;
+            width: $language-switch-arrow_width;
+            height: $language-switch-arrow_height;
+            @extend %background_img_setting;
+            @include transition-timing-function(cubic-bezier(0.3, -0.3, 0.6, 1.8));
+            @include transition-duration(0.5s);
+        }
+        .arrows {
+            width: 35px;
+            height: 25px;
+            margin-left: -8px;
+        }
+        .arrows path {
+            stroke: white;
+            fill: transparent;
+            stroke-width: 1px;  
+        }
+        .language-switch-content {
+            @extend %as_wide_as_parent;
+            border-radius: 2px;
+            line-height: $language-switch-content_line_height;
+            font-size: $language-switch-content_font-size;
+            background-color: $skin_color;
+        }
+        .language-switch-button.clicked > .language-switch-arrow {
+            @include rotateX(180deg);
+            @include transition-timing-function(cubic-bezier(0.3, -0.3, 0.6, 1.8));
+            @include transition-duration(0.5s);
+        }
+        .language-switch-button.clicked + .language-switch-content {
+            @include translateY(-98%);
+        }
+            .language {
+                @extend %clickable;
+                padding-bottom: 1.5px;
+
+                &:hover {
+                    border-radius: 2px;
+                    color: $skin_color;
+                    background-color: $black;
+                }
+                &:active {
+                    border-radius: 2px;
+                    box-shadow: inset 0.5px 0.5px 0.5px $skin_color;
+                }
+            }

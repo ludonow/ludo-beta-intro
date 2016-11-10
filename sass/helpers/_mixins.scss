@@ -1,0 +1,53 @@
+// size
+@mixin dimensions($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+// background image url
+@mixin background_img_content($file_name) { background-image: url('../images/#{$file_name}.png'); }
+
+// animation
+@mixin transition($property, $duration, $timing-function) {
+    -webkit-transition: $property $duration $timing-function;
+    -moz-transition: $property $duration $timing-function;
+    transition: $property $duration $timing-function;
+}
+
+@mixin transition-duration($time) {
+    transition-duration: $time;
+    -moz-transition-duration: $time;
+    -webkit-transition-duration: $time;
+    -o-transition-duration: $time;
+}
+
+@mixin transition-timing-function($animation) {
+    transition-timing-function: $animation;
+    -moz-transition-timing-function: $animation;
+    -webkit-transition-timing-function: $animation;
+    -o-transition-timing-function: $animation;
+}
+
+@mixin transform($scale, $translateY:"") {
+    transform: scale($scale) translateY(#{$translateY});
+    -ms-transform: scale($scale) translateY(#{$translateY});
+    -moz-transform: scale($scale) translateY(#{$translateY});
+    -webkit-transform: scale($scale) translateY(#{$translateY});
+    -o-transform: scale($scale) translateY(#{$translateY});
+}
+
+@mixin translateY($translateY) {
+    transform: translateY($translateY);
+    -ms-transform: translateY($translateY);
+    -moz-transform: translateY($translateY);
+    -webkit-transform: translateY($translateY);
+    -o-transform: translateY($translateY);
+}
+
+@mixin rotateX($Xdeg) {
+    transform: rotateX($Xdeg);
+    -ms-transform: rotateX($Xdeg);
+    -moz-transform: rotateX($Xdeg);
+    -webkit-transform: rotateX($Xdeg);
+    -o-transform: rotateX($Xdeg);
+}

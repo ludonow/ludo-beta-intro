@@ -1,0 +1,58 @@
+@import "helpers/variables";
+
+// position
+%fixed { position: fixed; }
+%absolute { position: absolute; }
+%relative { position: relative; }
+%closer { z-index: 2; }
+%top { top: 0; }
+%bottom { bottom: 0; }
+%right { right: 0; }
+%left { left: 0; }
+
+// dimension
+%as_wide_as_parent { width: 100%; }
+%half_width_of_parent { width: 50%; }
+%as_tall_as_parent { height: 100%; }
+%half_height_of_parent { height: 50%; }
+
+// offset
+%header_height_offset {top: $header_height;}
+
+// margin
+%margin_center_x { margin: 0 auto; }
+
+// border
+%round_border { border-radius: 50%; }
+
+// padding
+%padding_x { 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+// background
+%background_img_setting {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+// typography
+%text_center { text-align: center; }
+%remove_text-decoration { text-decoration: none }
+%bold_font { font-weight: bold; }
+%light_font { font-weight: 300; }
+%font_Exo2 { font-family: 'Microsoft JhengHei', 'EXO 2'; }
+
+// mouse event
+%clickable { cursor: pointer; }
+%noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
